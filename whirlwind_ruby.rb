@@ -62,7 +62,73 @@
 #   end
 #
 # end
-result = false
-unless result
-  puts "Hello!"
+
+#or
+#
+# result = false
+# unless result
+#   puts "Hello!"
+# end
+
+
+
+# puts "How many recipes can Sam make?"
+# sam_num_rec = gets.chomp.to_i
+#
+# puts "Can Sam make crepes?"
+# crepe = gets.chomp
+# if crepe == "yes"
+#   crepe = true
+# else
+#   crepe = false
+# end
+#
+# puts "How many languages can Sally speak?"
+# sally_num_language = gets.chomp.to_i
+#
+# puts "Can Sally speak French?"
+# french = gets.chomp
+# if french == "yes"
+#   french = true
+# else
+#   french = false
+# end
+#
+#
+# if sam_num_rec > 10 && sally_num_language > 5
+#   puts "dating!"
+# else
+#   puts "not dating"
+# end
+#
+# if crepe || french
+#   puts "married"
+# else
+#   puts "not married"
+# end
+
+# class User(input)
+#  @email = input(:email)
+#  @last_name = input(:last_name)
+#  @first_name = input(:first_name)
+#
+#
+# jack = User.new(:first_name "Jack", :last_name "Rabeck", :email "JR@gmail.com")
+#
+# # person = {}
+# # person[:first_name] = x
+
+people = []
+1.times do
+  person = {}
+ puts "Enter a first name"
+ person[:first_name] = gets.chomp
+ puts "Enter a last name"
+ person[:last_name] = gets.chomp
+  puts "Enter an email"
+  person[:email] = gets.chomp
+  people << person
+
 end
+
+p people[0]
